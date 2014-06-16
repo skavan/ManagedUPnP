@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70A84BEA-4129-437A-B4D4-C6051F5415DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPnPBrowser</RootNamespace>
+    <AssemblyName>UPnPBrowser</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowserInfos\ctlUPnPActionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPActionInfo.Designer.cs">
+      <DependentUpon>ctlUPnPActionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPCustomCodeGenerator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPCustomCodeGenerator.Designer.cs">
+      <DependentUpon>ctlUPnPCustomCodeGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPDeviceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPDeviceInfo.Designer.cs">
+      <DependentUpon>ctlUPnPDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPServiceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPServiceInfo.Designer.cs">
+      <DependentUpon>ctlUPnPServiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPStateVarInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserInfos\ctlUPnPStateVarInfo.Designer.cs">
+      <DependentUpon>ctlUPnPStateVarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserItems\IUPnPTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPActionTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPDeviceTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPServiceBasedTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPServiceTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPStateVarTreeItem.cs" />
+    <Compile Include="BrowserItems\UPnPTreeItem.cs" />
+    <Compile Include="ctlClassScopeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlCodeGenProviderComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlDoubleBufferedDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlDoubleBufferedDataGridView.Designer.cs">
+      <DependentUpon>ctlDoubleBufferedDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlLinkRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlLinkRichTextBox.Designer.cs">
+      <DependentUpon>ctlLinkRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlUPnPInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlUPnPInfo.Designer.cs">
+      <DependentUpon>ctlUPnPInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlUPnPTreeBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlUPnPTreeBrowser.Designer.cs">
+      <DependentUpon>ctlUPnPTreeBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Windows.Forms\ctlAutoScrollRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\ctlAutoScrollRichTextBox.Designer.cs">
+      <DependentUpon>ctlAutoScrollRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.Windows.Forms\ctlEnumSelectionBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\ctlEnumSelectionBox.designer.cs">
+      <DependentUpon>ctlEnumSelectionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.Windows.Forms\ctlLogBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\ctlLogBox.Designer.cs">
+      <DependentUpon>ctlLogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.Windows.Forms\EnumSelectionDefaultAttribute.cs" />
+    <Compile Include="System.Windows.Forms\EnumSelectionHideAttribute.cs" />
+    <Compile Include="System.Windows.Forms\EnumSelectionTextAttribute.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BrowserInfos\ctlUPnPActionInfo.resx">
+      <DependentUpon>ctlUPnPActionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserInfos\ctlUPnPCustomCodeGenerator.resx">
+      <DependentUpon>ctlUPnPCustomCodeGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserInfos\ctlUPnPDeviceInfo.resx">
+      <DependentUpon>ctlUPnPDeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserInfos\ctlUPnPServiceInfo.resx">
+      <DependentUpon>ctlUPnPServiceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserInfos\ctlUPnPStateVarInfo.resx">
+      <DependentUpon>ctlUPnPStateVarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlDoubleBufferedDataGridView.resx">
+      <DependentUpon>ctlDoubleBufferedDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlLinkRichTextBox.resx">
+      <DependentUpon>ctlLinkRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlUPnPTreeBrowser.resx">
+      <DependentUpon>ctlUPnPTreeBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System.Windows.Forms\ctlLogBox.resx">
+      <DependentUpon>ctlLogBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManagedUPnP\ManagedUPnP.csproj">
+      <Project>{5956DABC-C1AB-498E-B8C8-F62ED6DCD30C}</Project>
+      <Name>ManagedUPnP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿<DIDL-Lite xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/" xmlns:r="urn:schemas-rinconnetworks-com:metadata-1-0/" xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/">
+  <item id="-1" parentID="-1" restricted="true">
+    <res protocolInfo="x-file-cifs:*:audio/mpeg:*" duration="0:04:55">x-file-cifs://ZEUS/Music/Master%20Compressed/My%20Compressed%20Files/Coldplay/Ghost%20Stories%20%5b+digital%20booklet%5d/01-05-%20Midnight.mp3</res>
+    <r:streamContent></r:streamContent>
+    <r:radioShowMd></r:radioShowMd>
+    <upnp:albumArtURI>/getaa?u=x-file-cifs%3a%2f%2fZEUS%2fMusic%2fMaster%2520Compressed%2fMy%2520Compressed%2520Files%2fColdplay%2fGhost%2520Stories%2520%255b%2bdigital%2520booklet%255d%2f01-05-%2520Midnight.mp3&amp;v=27</upnp:albumArtURI>
+    <dc:title>Midnight</dc:title>
+    <upnp:class>object.item.audioItem.musicTrack</upnp:class>
+    <dc:creator>Coldplay</dc:creator>
+    <upnp:album>Ghost Stories [+digital booklet]</upnp:album>
+    <upnp:originalTrackNumber>5</upnp:originalTrackNumber>
+    <r:albumArtist>Coldplay</r:albumArtist>
+  </item>
+</DIDL-Lite>

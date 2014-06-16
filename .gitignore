@@ -1,0 +1,26 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ComponentsTest/bin
+/ComponentsTest/obj/x86
+/ExternalIPAddress/bin/Debug
+/ExternalIPAddress/bin/Release
+/ExternalIPAddress/obj/x86/Debug
+/ExternalIPAddress/obj/x86/Release
+/ManagedUPnP/bin/Debug
+/ManagedUPnP/bin/Release
+/ManagedUPnP/obj
+/ManagedUPnPTest/bin
+/ManagedUPnPTest/obj/x86
+/UPnPBrowser/bin/Debug
+/UPnPBrowser/obj/Debug
+/UPnPNavigator/bin/Debug
+/UPnPNavigator/obj/Debug
+/vbClient/bin/Debug
+/vbClient/obj/x86/Debug
+/vbClient2/bin/Debug
+/vbClient2/obj/Debug
+/vbTestHarness/bin/Debug
+/vbTestHarness/obj/x86/Debug/TempPE
+/vbTestHarness/obj/x86/Debug
